@@ -12,7 +12,6 @@ import CoreData
     var email: String = ""
     var password: String = ""
     var isNavigating: Bool = false
-    var loginFailed: Bool = false
     var isLoggedIn: Bool = false
     var alertMessage: String = ""
     var showingResetPassword = false
