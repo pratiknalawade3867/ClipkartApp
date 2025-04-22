@@ -3,6 +3,7 @@ import CoreData
 
 struct ForgotPasswordView: View {
     @Environment(\.managedObjectContext) private var context
+    @Environment(\.dismiss) private var dismiss
     @State var email: String = ""
     @State private var newPassword: String = ""
     @State private var message: String?
@@ -44,7 +45,17 @@ struct ForgotPasswordView: View {
             .background(Color.white.opacity(0.1), in: RoundedRectangle(cornerRadius: 20))
             .shadow(radius: 10)
         }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing){
+                Button {
+                    dismiss()
+                } lable: {
+                    Image(systemName: "xmark")
+               }
+            } 
+        }
     }
+}
     
     private func resetPassword() {
         isSubmitting = true
