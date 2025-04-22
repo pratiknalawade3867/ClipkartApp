@@ -17,12 +17,12 @@ struct ProductRowView: View {
             }
             
             VStack(alignment: .leading, spacing: 8) {
-                // Title
+                // MARK:  Title
                 Text(product.title)
                     .font(.headline)
                     .lineLimit(nil) // Remove line limit to allow full text
                 
-                // Category and Rating
+                // MARK:  Category and Rating
                 HStack {
                     Text(product.category)
                         .font(.subheadline)
@@ -37,13 +37,13 @@ struct ProductRowView: View {
                     .foregroundStyle(.yellow)
                 }
                 
-                // Description
+                // MARK:  Description
                 Text(product.description)
                     .font(.footnote)
                     .foregroundStyle(.secondary)
                     .lineLimit(3)
                 
-                // Price and Buy Button
+                // MARK:  Price and Buy Button
                 HStack {
                     Text(product.price, format: .currency(code: "USD"))
                         .font(.title3)
