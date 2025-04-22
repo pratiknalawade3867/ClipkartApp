@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F216FB852D82A510009EC6DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F216FB872D82A510009EC6DB /* Localizable.strings */; };
+		F216FB892D82B51B009EC6DB /* CreateAccountViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216FB882D82B51B009EC6DB /* CreateAccountViewModelTests.swift */; };
+		F23DA75D2CD35FD100B2A92A /* ClipkartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA75C2CD35FD100B2A92A /* ClipkartApp.swift */; };
+		F23DA75F2CD35FD100B2A92A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA75E2CD35FD100B2A92A /* ContentView.swift */; };
+		F23DA7612CD35FD400B2A92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23DA7602CD35FD400B2A92A /* Assets.xcassets */; };
+		F23DA7642CD35FD400B2A92A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23DA7632CD35FD400B2A92A /* Preview Assets.xcassets */; };
+		F23DA76E2CD35FD400B2A92A /* ClipkartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA76D2CD35FD400B2A92A /* ClipkartTests.swift */; };
+		F23DA7782CD35FD400B2A92A /* ClipkartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA7772CD35FD400B2A92A /* ClipkartUITests.swift */; };
+		F23DA77A2CD35FD400B2A92A /* ClipkartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA7792CD35FD400B2A92A /* ClipkartUITestsLaunchTests.swift */; };
+		F23DA78B2CD3606E00B2A92A /* UserTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA78A2CD3606E00B2A92A /* UserTags.swift */; };
+		F23DA78D2CD3608B00B2A92A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA78C2CD3608B00B2A92A /* Product.swift */; };
+		F23DA78F2CD3609B00B2A92A /* Singletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA78E2CD3609B00B2A92A /* Singletons.swift */; };
+		F23DA7912CD360B400B2A92A /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA7902CD360B400B2A92A /* CreateAccountViewModel.swift */; };
+		F23DA7932CD360BF00B2A92A /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA7922CD360BF00B2A92A /* ProductViewModel.swift */; };
+		F23DA79D2CD3611C00B2A92A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA79C2CD3611C00B2A92A /* ProfileView.swift */; };
+		F23DA79F2CD3613100B2A92A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA79E2CD3613100B2A92A /* SettingsView.swift */; };
+		F23DA7A12CD3614900B2A92A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DA7A02CD3614900B2A92A /* Constants.swift */; };
+		F23DA7A42CD3616A00B2A92A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F23DA7A22CD3616A00B2A92A /* Model.xcdatamodeld */; };
+		F25638BA2D5A14DE00777F48 /* ShowMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25638B92D5A14DE00777F48 /* ShowMapView.swift */; };
+		F25638BC2D5A151400777F48 /* ShowMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25638BB2D5A151400777F48 /* ShowMapViewModel.swift */; };
+		F25638BE2D5A15E500777F48 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25638BD2D5A15E500777F48 /* Location.swift */; };
+		F28407F12CDA292100998548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28407F02CDA292100998548 /* LaunchScreen.storyboard */; };
+		F293879E2CE6119400C70242 /* OrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293879D2CE6119400C70242 /* OrderConfirmationView.swift */; };
+		F29C74882CD367E600D1C3F3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29C74872CD367E600D1C3F3 /* LoginViewModel.swift */; };
+		F2EB01572CD3C8640019CB89 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB01562CD3C8640019CB89 /* ProfileViewModel.swift */; };
+		F2EB015A2CD3C88F0019CB89 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB01592CD3C88F0019CB89 /* LoginView.swift */; };
+		F2EB015C2CD3C8A60019CB89 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB015B2CD3C8A60019CB89 /* CreateAccountView.swift */; };
+		F2EB015E2CD3C8BE0019CB89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB015D2CD3C8BE0019CB89 /* MainView.swift */; };
+		F2EB01612CD3C8F10019CB89 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB01602CD3C8F10019CB89 /* ProductRowView.swift */; };
+		F2EB01632CD3C8FF0019CB89 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB01622CD3C8FF0019CB89 /* ProductDetailsView.swift */; };
+		F2EB01652CD3C90A0019CB89 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB01642CD3C90A0019CB89 /* CartView.swift */; };
+		F2F8CA562CD71A610067029F /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8CA552CD71A610067029F /* ForgotPasswordView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F23DA76A2CD35FD400B2A92A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F23DA7512CD35FD100B2A92A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23DA7582CD35FD100B2A92A;
+			remoteInfo = Clipkart;
+		};
+		F23DA7742CD35FD400B2A92A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F23DA7512CD35FD100B2A92A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23DA7582CD35FD100B2A92A;
+			remoteInfo = Clipkart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F216FB882D82B51B009EC6DB /* CreateAccountViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModelTests.swift; sourceTree = "<group>"; };
+		F216FB8B2D82BAA6009EC6DB /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F23DA7592CD35FD100B2A92A /* Clipkart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipkart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23DA75C2CD35FD100B2A92A /* ClipkartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipkartApp.swift; sourceTree = "<group>"; };
+		F23DA75E2CD35FD100B2A92A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F23DA7602CD35FD400B2A92A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F23DA7632CD35FD400B2A92A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F23DA7692CD35FD400B2A92A /* ClipkartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipkartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23DA76D2CD35FD400B2A92A /* ClipkartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipkartTests.swift; sourceTree = "<group>"; };
+		F23DA7732CD35FD400B2A92A /* ClipkartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipkartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23DA7772CD35FD400B2A92A /* ClipkartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipkartUITests.swift; sourceTree = "<group>"; };
+		F23DA7792CD35FD400B2A92A /* ClipkartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipkartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F23DA78A2CD3606E00B2A92A /* UserTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTags.swift; sourceTree = "<group>"; };
+		F23DA78C2CD3608B00B2A92A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F23DA78E2CD3609B00B2A92A /* Singletons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singletons.swift; sourceTree = "<group>"; };
+		F23DA7902CD360B400B2A92A /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		F23DA7922CD360BF00B2A92A /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		F23DA79C2CD3611C00B2A92A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F23DA79E2CD3613100B2A92A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F23DA7A02CD3614900B2A92A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F23DA7A32CD3616A00B2A92A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F25638B92D5A14DE00777F48 /* ShowMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapView.swift; sourceTree = "<group>"; };
+		F25638BB2D5A151400777F48 /* ShowMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapViewModel.swift; sourceTree = "<group>"; };
+		F25638BD2D5A15E500777F48 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F28407F02CDA292100998548 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F293879D2CE6119400C70242 /* OrderConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationView.swift; sourceTree = "<group>"; };
+		F29C74872CD367E600D1C3F3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F2B771E22D6D83F6006377A9 /* Clipkart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipkart.entitlements; sourceTree = "<group>"; };
+		F2EB01562CD3C8640019CB89 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F2EB01592CD3C88F0019CB89 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F2EB015B2CD3C8A60019CB89 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		F2EB015D2CD3C8BE0019CB89 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F2EB01602CD3C8F10019CB89 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
+		F2EB01622CD3C8FF0019CB89 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
+		F2EB01642CD3C90A0019CB89 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		F2F8CA552CD71A610067029F /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F23DA7562CD35FD100B2A92A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23DA7662CD35FD400B2A92A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23DA7702CD35FD400B2A92A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F23DA7502CD35FD100B2A92A = {
+			isa = PBXGroup;
+			children = (
+				F23DA75B2CD35FD100B2A92A /* Clipkart */,
+				F23DA76C2CD35FD400B2A92A /* ClipkartTests */,
+				F23DA7762CD35FD400B2A92A /* ClipkartUITests */,
+				F23DA75A2CD35FD100B2A92A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F23DA75A2CD35FD100B2A92A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F23DA7592CD35FD100B2A92A /* Clipkart.app */,
+				F23DA7692CD35FD400B2A92A /* ClipkartTests.xctest */,
+				F23DA7732CD35FD400B2A92A /* ClipkartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F23DA75B2CD35FD100B2A92A /* Clipkart */ = {
+			isa = PBXGroup;
+			children = (
+				F2B771E22D6D83F6006377A9 /* Clipkart.entitlements */,
+				F23DA7882CD3604B00B2A92A /* Models */,
+				F23DA7872CD3603A00B2A92A /* ViewModels */,
+				F23DA7862CD3603200B2A92A /* Views */,
+				F23DA75C2CD35FD100B2A92A /* ClipkartApp.swift */,
+				F23DA75E2CD35FD100B2A92A /* ContentView.swift */,
+				F23DA7892CD3605400B2A92A /* Others */,
+				F23DA7602CD35FD400B2A92A /* Assets.xcassets */,
+				F23DA7622CD35FD400B2A92A /* Preview Content */,
+			);
+			path = Clipkart;
+			sourceTree = "<group>";
+		};
+		F23DA7622CD35FD400B2A92A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F23DA7632CD35FD400B2A92A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F23DA76C2CD35FD400B2A92A /* ClipkartTests */ = {
+			isa = PBXGroup;
+			children = (
+				F23DA76D2CD35FD400B2A92A /* ClipkartTests.swift */,
+				F216FB882D82B51B009EC6DB /* CreateAccountViewModelTests.swift */,
+			);
+			path = ClipkartTests;
+			sourceTree = "<group>";
+		};
+		F23DA7762CD35FD400B2A92A /* ClipkartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F23DA7772CD35FD400B2A92A /* ClipkartUITests.swift */,
+				F23DA7792CD35FD400B2A92A /* ClipkartUITestsLaunchTests.swift */,
+			);
+			path = ClipkartUITests;
+			sourceTree = "<group>";
+		};
+		F23DA7862CD3603200B2A92A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2EB01582CD3C8790019CB89 /* Login-Setup */,
+				F2EB015F2CD3C8C90019CB89 /* Product-Setup */,
+				F25638B82D5A126700777F48 /* SideMenuBarViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F23DA7872CD3603A00B2A92A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F29C74872CD367E600D1C3F3 /* LoginViewModel.swift */,
+				F23DA7902CD360B400B2A92A /* CreateAccountViewModel.swift */,
+				F23DA7922CD360BF00B2A92A /* ProductViewModel.swift */,
+				F2EB01562CD3C8640019CB89 /* ProfileViewModel.swift */,
+				F25638BB2D5A151400777F48 /* ShowMapViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F23DA7882CD3604B00B2A92A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F23DA78A2CD3606E00B2A92A /* UserTags.swift */,
+				F23DA78C2CD3608B00B2A92A /* Product.swift */,
+				F23DA78E2CD3609B00B2A92A /* Singletons.swift */,
+				F25638BD2D5A15E500777F48 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F23DA7892CD3605400B2A92A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F28407F02CDA292100998548 /* LaunchScreen.storyboard */,
+				F23DA7A02CD3614900B2A92A /* Constants.swift */,
+				F23DA7A22CD3616A00B2A92A /* Model.xcdatamodeld */,
+				F216FB872D82A510009EC6DB /* Localizable.strings */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F25638B82D5A126700777F48 /* SideMenuBarViews */ = {
+			isa = PBXGroup;
+			children = (
+				F23DA79E2CD3613100B2A92A /* SettingsView.swift */,
+				F23DA79C2CD3611C00B2A92A /* ProfileView.swift */,
+				F25638B92D5A14DE00777F48 /* ShowMapView.swift */,
+			);
+			path = SideMenuBarViews;
+			sourceTree = "<group>";
+		};
+		F2EB01582CD3C8790019CB89 /* Login-Setup */ = {
+			isa = PBXGroup;
+			children = (
+				F2EB01592CD3C88F0019CB89 /* LoginView.swift */,
+				F2EB015B2CD3C8A60019CB89 /* CreateAccountView.swift */,
+				F2F8CA552CD71A610067029F /* ForgotPasswordView.swift */,
+			);
+			path = "Login-Setup";
+			sourceTree = "<group>";
+		};
+		F2EB015F2CD3C8C90019CB89 /* Product-Setup */ = {
+			isa = PBXGroup;
+			children = (
+				F2EB015D2CD3C8BE0019CB89 /* MainView.swift */,
+				F2EB01602CD3C8F10019CB89 /* ProductRowView.swift */,
+				F2EB01622CD3C8FF0019CB89 /* ProductDetailsView.swift */,
+				F293879D2CE6119400C70242 /* OrderConfirmationView.swift */,
+				F2EB01642CD3C90A0019CB89 /* CartView.swift */,
+			);
+			path = "Product-Setup";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F23DA7582CD35FD100B2A92A /* Clipkart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23DA77D2CD35FD400B2A92A /* Build configuration list for PBXNativeTarget "Clipkart" */;
+			buildPhases = (
+				F23DA7552CD35FD100B2A92A /* Sources */,
+				F23DA7562CD35FD100B2A92A /* Frameworks */,
+				F23DA7572CD35FD100B2A92A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clipkart;
+			productName = Clipkart;
+			productReference = F23DA7592CD35FD100B2A92A /* Clipkart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F23DA7682CD35FD400B2A92A /* ClipkartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23DA7802CD35FD400B2A92A /* Build configuration list for PBXNativeTarget "ClipkartTests" */;
+			buildPhases = (
+				F23DA7652CD35FD400B2A92A /* Sources */,
+				F23DA7662CD35FD400B2A92A /* Frameworks */,
+				F23DA7672CD35FD400B2A92A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F23DA76B2CD35FD400B2A92A /* PBXTargetDependency */,
+			);
+			name = ClipkartTests;
+			productName = ClipkartTests;
+			productReference = F23DA7692CD35FD400B2A92A /* ClipkartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F23DA7722CD35FD400B2A92A /* ClipkartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23DA7832CD35FD400B2A92A /* Build configuration list for PBXNativeTarget "ClipkartUITests" */;
+			buildPhases = (
+				F23DA76F2CD35FD400B2A92A /* Sources */,
+				F23DA7702CD35FD400B2A92A /* Frameworks */,
+				F23DA7712CD35FD400B2A92A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F23DA7752CD35FD400B2A92A /* PBXTargetDependency */,
+			);
+			name = ClipkartUITests;
+			productName = ClipkartUITests;
+			productReference = F23DA7732CD35FD400B2A92A /* ClipkartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F23DA7512CD35FD100B2A92A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F23DA7582CD35FD100B2A92A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F23DA7682CD35FD400B2A92A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F23DA7582CD35FD100B2A92A;
+					};
+					F23DA7722CD35FD400B2A92A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F23DA7582CD35FD100B2A92A;
+					};
+				};
+			};
+			buildConfigurationList = F23DA7542CD35FD100B2A92A /* Build configuration list for PBXProject "Clipkart" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				hi,
+			);
+			mainGroup = F23DA7502CD35FD100B2A92A;
+			productRefGroup = F23DA75A2CD35FD100B2A92A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F23DA7582CD35FD100B2A92A /* Clipkart */,
+				F23DA7682CD35FD400B2A92A /* ClipkartTests */,
+				F23DA7722CD35FD400B2A92A /* ClipkartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F23DA7572CD35FD100B2A92A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28407F12CDA292100998548 /* LaunchScreen.storyboard in Resources */,
+				F216FB852D82A510009EC6DB /* Localizable.strings in Resources */,
+				F23DA7642CD35FD400B2A92A /* Preview Assets.xcassets in Resources */,
+				F23DA7612CD35FD400B2A92A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23DA7672CD35FD400B2A92A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23DA7712CD35FD400B2A92A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F23DA7552CD35FD100B2A92A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23DA7932CD360BF00B2A92A /* ProductViewModel.swift in Sources */,
+				F2EB015E2CD3C8BE0019CB89 /* MainView.swift in Sources */,
+				F2EB015C2CD3C8A60019CB89 /* CreateAccountView.swift in Sources */,
+				F23DA75F2CD35FD100B2A92A /* ContentView.swift in Sources */,
+				F23DA7A42CD3616A00B2A92A /* Model.xcdatamodeld in Sources */,
+				F23DA78D2CD3608B00B2A92A /* Product.swift in Sources */,
+				F23DA79D2CD3611C00B2A92A /* ProfileView.swift in Sources */,
+				F23DA78F2CD3609B00B2A92A /* Singletons.swift in Sources */,
+				F23DA78B2CD3606E00B2A92A /* UserTags.swift in Sources */,
+				F23DA7912CD360B400B2A92A /* CreateAccountViewModel.swift in Sources */,
+				F25638BE2D5A15E500777F48 /* Location.swift in Sources */,
+				F25638BC2D5A151400777F48 /* ShowMapViewModel.swift in Sources */,
+				F2EB01572CD3C8640019CB89 /* ProfileViewModel.swift in Sources */,
+				F29C74882CD367E600D1C3F3 /* LoginViewModel.swift in Sources */,
+				F2EB01612CD3C8F10019CB89 /* ProductRowView.swift in Sources */,
+				F23DA7A12CD3614900B2A92A /* Constants.swift in Sources */,
+				F25638BA2D5A14DE00777F48 /* ShowMapView.swift in Sources */,
+				F2EB015A2CD3C88F0019CB89 /* LoginView.swift in Sources */,
+				F23DA75D2CD35FD100B2A92A /* ClipkartApp.swift in Sources */,
+				F293879E2CE6119400C70242 /* OrderConfirmationView.swift in Sources */,
+				F23DA79F2CD3613100B2A92A /* SettingsView.swift in Sources */,
+				F2EB01652CD3C90A0019CB89 /* CartView.swift in Sources */,
+				F2F8CA562CD71A610067029F /* ForgotPasswordView.swift in Sources */,
+				F2EB01632CD3C8FF0019CB89 /* ProductDetailsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23DA7652CD35FD400B2A92A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F216FB892D82B51B009EC6DB /* CreateAccountViewModelTests.swift in Sources */,
+				F23DA76E2CD35FD400B2A92A /* ClipkartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23DA76F2CD35FD400B2A92A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23DA77A2CD35FD400B2A92A /* ClipkartUITestsLaunchTests.swift in Sources */,
+				F23DA7782CD35FD400B2A92A /* ClipkartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F23DA76B2CD35FD400B2A92A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F23DA7582CD35FD100B2A92A /* Clipkart */;
+			targetProxy = F23DA76A2CD35FD400B2A92A /* PBXContainerItemProxy */;
+		};
+		F23DA7752CD35FD400B2A92A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F23DA7582CD35FD100B2A92A /* Clipkart */;
+			targetProxy = F23DA7742CD35FD400B2A92A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F216FB872D82A510009EC6DB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F216FB8B2D82BAA6009EC6DB /* hi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F23DA77B2CD35FD400B2A92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F23DA77C2CD35FD400B2A92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F23DA77E2CD35FD400B2A92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Clipkart/Clipkart.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Clipkart/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Show the user location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.componey.Clipkart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F23DA77F2CD35FD400B2A92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Clipkart/Clipkart.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Clipkart/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Show the user location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.componey.Clipkart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F23DA7812CD35FD400B2A92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.componey.ClipkartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clipkart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Clipkart";
+			};
+			name = Debug;
+		};
+		F23DA7822CD35FD400B2A92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.componey.ClipkartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clipkart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Clipkart";
+			};
+			name = Release;
+		};
+		F23DA7842CD35FD400B2A92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.componey.ClipkartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Clipkart;
+			};
+			name = Debug;
+		};
+		F23DA7852CD35FD400B2A92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.componey.ClipkartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Clipkart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F23DA7542CD35FD100B2A92A /* Build configuration list for PBXProject "Clipkart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23DA77B2CD35FD400B2A92A /* Debug */,
+				F23DA77C2CD35FD400B2A92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23DA77D2CD35FD400B2A92A /* Build configuration list for PBXNativeTarget "Clipkart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23DA77E2CD35FD400B2A92A /* Debug */,
+				F23DA77F2CD35FD400B2A92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23DA7802CD35FD400B2A92A /* Build configuration list for PBXNativeTarget "ClipkartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23DA7812CD35FD400B2A92A /* Debug */,
+				F23DA7822CD35FD400B2A92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23DA7832CD35FD400B2A92A /* Build configuration list for PBXNativeTarget "ClipkartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23DA7842CD35FD400B2A92A /* Debug */,
+				F23DA7852CD35FD400B2A92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F23DA7A22CD3616A00B2A92A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F23DA7A32CD3616A00B2A92A /* Model.xcdatamodel */,
+			);
+			currentVersion = F23DA7A32CD3616A00B2A92A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F23DA7512CD35FD100B2A92A /* Project object */;
+}

@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Clipkart
+
+  Created by pratik.nalawade on 13/03/25.
+  
+*/
+
+
+"Email or Phone number!" = "ईमेल या फ़ोन नंबर!";
+"Unknown user!" = "अज्ञात उपयोगकर्ता!";
+"Please fill some detail!" = "कृपया कुछ विवरण भरें!";
+"User saved!" = "उपयोगकर्ता सहेजा गया!";
+"Please fill user!" = "कृपया उपयोगकर्ता भरें";
+"Please turn on your internet!" = "कृपया अपना इंटरनेट चालू करें!";
+"Sign up with Apple" = "Apple के साथ साइन अप";
+"Sign up with Google" = "Google के साथ साइन अप";
+"OK" = "ठीक है";
+"Don't have an account?" = "क्या आपके पास खाता नहीं है?";
+"Password" = "पासवर्ड";
+"Please complete all information to create an account." = "कृपया खाता बनाने के लिए सभी जानकारी भरें";
+"Delete Account" = "खाता हटा दो";
+"Are you sure you want to place this order?" = "क्या आप वाकई यह ऑर्डर देना चाहते हैं?";
+"Alert" = "चेतावनी";
+"Login" = "लॉग इन करें";
+"Create Account" = "खाता बनाएं";
+"Full Name *" = "पूरा नाम *";
+"Email or Phone number *" = "ईमेल या फ़ोन नंबर *";
+"Order Placed!" = "Order रखा!";
+"Set up your account" = "अपना खाता सेट करें";
+"Work in progress..." = "कार्य प्रगति पर है...";
