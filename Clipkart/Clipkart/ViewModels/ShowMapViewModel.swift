@@ -9,27 +9,26 @@ import Foundation
 import MapKit
 import SwiftUI
 
-@MainActor
 @Observable class ShowMapViewModel: ObservableObject {
     
-    // All loaded locations
+    // MARK:  All loaded locations
     var locations: [Location]
     
-    // Current location on map
+    // MARK:  Current location on map
     var mapLocation: Location {
         didSet {
             updateMapRegion(location: mapLocation)
         }
     }
     
-    // Current region on map
+    // MARK:  Current region on map
     var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
-    // Show list of locations
+    // MARK:  Show list of locations
     var showLocationsList: Bool = false
     
-    // Show location detail via sheet
+    // MARK:  Show location detail via sheet
     var sheetLocation: Location? = nil
     
     init() {
@@ -62,13 +61,13 @@ import SwiftUI
     }
     
     func nextButtonPressed() {
-        // Get the current index
+        // MARK:  Get the current index
         guard let currentIndex = locations.firstIndex(where: { $0 == mapLocation }) else {
             print("Could not find current index in locations array! Should never happen.")
             return
         }
         
-        // Check if the currentIndex is valid
+        // MARK:  Check if the currentIndex is valid
         let nextIndex = currentIndex + 1
         guard locations.indices.contains(nextIndex) else {
             guard let firstLocation = locations.first else { return }
@@ -76,7 +75,7 @@ import SwiftUI
             return
         }
         
-        // Next index IS valid
+        // MARK:  Next index IS valid
         let nextLocation = locations[nextIndex]
         showNextLocation(location: nextLocation)
     }
