@@ -8,28 +8,28 @@
 import SwiftUI
 
 struct SettingsView: View {
-    // Dark Mode Setting (Using @AppStorage to persist across sessions)
+    // MARK:  Dark Mode Setting (Using @AppStorage to persist across sessions)
     @AppStorage("isDarkMode") private var isDarkMode: Bool = false
     
-    // Dummy App Version
+    // MARK:  Dummy App Version
     let appVersion = "1.0.0"
     
     var body: some View {
         NavigationView {
             VStack {
                 List {
-                    // Dark Mode Toggle
+                    // MARK:  Dark Mode Toggle
                     Section(header: Text("Appearance")) {
                         Toggle(isOn: $isDarkMode) {
                             Text("Dark Mode")
                         }
                         .onChange(of: isDarkMode) { value in
-                            // Update the color scheme based on the dark mode toggle
+                            // MARK:  Update the color scheme based on the dark mode toggle
                             UIApplication.shared.windows.first?.rootViewController?.view.overrideUserInterfaceStyle = value ? .dark : .light
                         }
                     }
                     
-                    // App Version Display
+                    // MARK:  App Version Display
                     Section(header: Text("App Info")) {
                         HStack {
                             Text("App Version")
@@ -39,7 +39,7 @@ struct SettingsView: View {
                         }
                     }
                     
-                    // More Settings Section
+                    // MARK:  More Settings Section
                     Section(header: Text("More Settings")) {
                         NavigationLink(destination: Text("Account Settings")) {
                             HStack {
