@@ -17,7 +17,7 @@ struct LoginView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 16) {
-                    // logo
+                    // MARK:  logo
                     logo
                         .scaleEffect(logoScale)
                         .onAppear {
@@ -26,12 +26,12 @@ struct LoginView: View {
                                 logoScale = 1.1
                             }
                         }
-                    // title
+                    // MARK:  title
                     titleView
                     
                     Spacer().frame(height: 12)
                     
-                    // textfields
+                    // MARK:  textfields
                     InputView(
                         placeholder: ViewStrings.emailPlaceholder.getText(),
                         text: $viewModel.email
@@ -43,7 +43,7 @@ struct LoginView: View {
                         text: $viewModel.password
                     )
                     
-                    // forgot button
+                    // MARK:  forgot button
                     HStack {
                         Spacer()
                         Button(ViewStrings.forgotPassTxt.getText()) {
@@ -54,7 +54,7 @@ struct LoginView: View {
                         .fontWeight(.medium)
                     }
                     
-                    // login button
+                    // MARK:  login button
                     Button(action: {
                         viewModel.login(in: viewContext)
                     }) {
@@ -75,10 +75,10 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                // bottom view
+                // MARK:  bottom view
                 bottomView
                 
-                //footer view
+                // MARK: footer view
                 NavigationLink(destination: CreateAccountView()) {
                     HStack {
                         Text(ViewStrings.donthaveaccTxt.getText())
