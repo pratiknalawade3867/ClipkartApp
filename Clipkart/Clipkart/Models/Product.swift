@@ -32,6 +32,7 @@ extension Double {
     func toString() -> String {
         return String(format: "%.1f",self)
     }
+    
     func currencyFormat() -> String {
         let formatter = NumberFormatter()
         formatter.maximumFractionDigits = 2
