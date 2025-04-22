@@ -11,7 +11,7 @@ struct ForgotPasswordView: View {
     
     var body: some View {
         ZStack {
-            // Background Gradient
+            // MARK:  Background Gradient
             LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.8), Color.purple.opacity(0.8)]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             
@@ -21,16 +21,16 @@ struct ForgotPasswordView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                 
-                // Email TextField with styling
+                // MARK:  Email TextField with styling
                 CustomTextField(placeholder: "User Email", text: $email)
                 
-                // New Password TextField with styling
+                // MARK:  New Password TextField with styling
                 CustomTextField(placeholder: "New Password", text: $newPassword, isSecure: true)
                 
-                // Reset Password Button with modern style
+                // MARK:  Reset Password Button with modern style
                 ResetPasswordButton(isSubmitting: $isSubmitting, action: resetPassword, isButtonDisabled: email.isEmpty || newPassword.isEmpty)
                 
-                // Success/Error Message
+                // MARK:  Success/Error Message
                 if let message = message {
                     Text(message)
                         .fontWeight(.bold)
@@ -60,7 +60,7 @@ struct ForgotPasswordView: View {
     private func resetPassword() {
         isSubmitting = true
         
-        // Simulate network delay
+        // MARK:  Simulate network delay
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
             fetchRequest.predicate = NSPredicate(format: "email == %@", email)
@@ -76,8 +76,7 @@ struct ForgotPasswordView: View {
                 }
             } catch {
                 message = "Failed to reset password."
-            }
-            
+            }   
             isSubmitting = false
         }
     }
@@ -120,12 +119,12 @@ struct ResetPasswordButton: View {
                 .foregroundColor(.white)
                 .padding()
                 .frame(maxWidth: .infinity)
-                .background(isButtonDisabled ? Color.gray : Color.blue) // Blue when enabled, gray when disabled
+                .background(isButtonDisabled ? Color.gray : Color.blue) // MARK:  Blue when enabled, gray when disabled
                 .cornerRadius(10)
                 .shadow(radius: 5)
                 .scaleEffect(isSubmitting ? 1.1 : 1.0)
                 .animation(.spring(), value: isSubmitting)
         }
-        .disabled(isButtonDisabled || isSubmitting) // Disable if fields are empty or if submitting
+        .disabled(isButtonDisabled || isSubmitting) // MARK:  Disable if fields are empty or if submitting
     }
 }
