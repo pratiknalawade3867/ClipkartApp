@@ -15,7 +15,7 @@ struct CartView: View {
     
     var body: some View {
         VStack{
-            // Check if the cart is empty and show the alert
+            // MARK:  Check if the cart is empty and show the alert
             if cartManager.cartItems.isEmpty {
                 VStack{
                     Spacer()
@@ -39,17 +39,17 @@ struct CartView: View {
             .navigationBarTitleDisplayMode(.inline)
         }
         .onAppear {
-            // If the cart is empty, show the alert
+            // MARK:  If the cart is empty, show the alert
             if cartManager.cartItems.isEmpty {
                 emptycart = true
             }
         }
     }
     private func deleteItems(at offsets: IndexSet) {
-        // Removing products from the cart manager
+        // MARK:  Removing products from the cart manager
         cartManager.cartItems.remove(atOffsets: offsets)
         
-        // Check if the cart is empty after the deletion
+        // MARK:  Check if the cart is empty after the deletion
         if cartManager.cartItems.isEmpty {
             emptycart = true
         }
