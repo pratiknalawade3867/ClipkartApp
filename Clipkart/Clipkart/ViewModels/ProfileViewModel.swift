@@ -12,5 +12,5 @@ import Foundation
     var password: String = ""
     var isAccountDeleted: Bool = false
     
-    // Other properties and methods...
+    // MARK:  Other properties and methods...
 }
