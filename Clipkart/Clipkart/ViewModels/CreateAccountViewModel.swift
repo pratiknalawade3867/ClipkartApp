@@ -15,8 +15,7 @@ import UIKit
     var fullName: String = ""
     var password: String = ""
     var confirmPassword: String = ""
-    var registrationSuccess: Bool = false
-    var registrationFail: Bool = false
+    var registrationStatus: Bool = false
     var alertMessage: String = ""
     var emailError: String?
     var fullNameError: String?
