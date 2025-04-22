@@ -13,7 +13,7 @@ struct MainView: View {
     @State private var searchText = ""
     @EnvironmentObject var cartManager: CartManager
     
-    // Computed property to filter products based on title or description
+    // MARK:  Computed property to filter products based on title or description
     var filteredProducts: [Product] {
         if searchText.isEmpty {
             return viewModel.products // If no search query, show all products
@@ -33,7 +33,7 @@ struct MainView: View {
     var body: some View {
         ZStack {
             VStack {
-                // Search Bar
+                // MARK:  Search Bar
                 if !viewModel.isLoading && !isMenuOpen {
                     TextField("Search by title or description", text: $searchText)
                         .padding(.leading, 40)  // Adds extra padding to the left for the icon
@@ -56,7 +56,7 @@ struct MainView: View {
                         .padding(.horizontal)  // Ensures the search bar has horizontal padding
                 }
                 
-                // ScrollView for vertical scrolling of products
+                // MARK:  ScrollView for vertical scrolling of products
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(Array(filteredProducts.enumerated()), id: \.element.id) { index, product in
@@ -65,7 +65,7 @@ struct MainView: View {
                                     ProductDetailsView(products: viewModel.products, index: index)
                                 } label: {
                                     VStack(spacing: 8) {
-                                        // Product Image
+                                        // MARK:  Product Image
                                         AsyncImage(url: URL(string: product.image)) { image in
                                             image.resizable()
                                                 .scaledToFill() // Ensures the image fills the frame
@@ -77,14 +77,14 @@ struct MainView: View {
                                                 .frame(width: 150, height: 150)
                                         }
                                         
-                                        // Product Name
+                                        // MARK:  Product Name
                                         Text(product.title)
                                             .font(.subheadline)
                                             .lineLimit(2)  // Ensures the title doesn't overflow
                                             .multilineTextAlignment(.center)
                                             .frame(maxWidth: .infinity)
                                         
-                                        // Prices (both original and discounted)
+                                        // MARK:  Prices (both original and discounted)
                                         HStack {
                                             Text("₹\(String(format: "%.2f", product.price))")
                                                 .strikethrough()
@@ -112,7 +112,7 @@ struct MainView: View {
                     .padding(.horizontal)
                     .animation(.easeInOut)  // Smooth transition when data changes
                     
-                    // List of filtered products -> if list view
+             // MARK:  List of filtered products -> if list view
                     //                List {
                     //                    ForEach(Array(filteredProducts.enumerated()), id: \.element.id) { index, product in
                     //                        if NetworkMonitor.shared.netOn {
@@ -157,7 +157,7 @@ struct MainView: View {
                         }
                             .hidden())} // Hide the navigation link)
                 
-                // Side menu
+                // MARK:  Side menu
                 if isMenuOpen {
                     SideMenu(isMenuOpen: $isMenuOpen)
                         .transition(.move(edge: .leading))
@@ -165,7 +165,7 @@ struct MainView: View {
                         .offset(x: -50) // Adjust this value to move the menu further left
                 }
                 
-                // ProgressView while loading
+                // MARK:  ProgressView while loading
                 if viewModel.isLoading {
                     ProgressView("Loading...")
                         .progressViewStyle(CircularProgressViewStyle(tint: .blue))
@@ -191,9 +191,9 @@ struct MainView: View {
         @State private var isExplore:Bool = false
         @State private var isShowMap:Bool = false
         
-        // List of menu items with icons, labels, and actions
+        // MARK:  List of menu items with icons, labels, and actions
         var menuItems: [(icon: String, label: String, action: () -> Void)] {
-            // Define the menu items in the body, so you can safely use `isExplore` and `isLogOut`
+            // MARK:  Define the menu items in the body, so you can safely use `isExplore` and `isLogOut`
             return [
                 ("location.circle", "Locate us!", { isShowMap = true}),
                 ("magnifyingglass", "Explore", { isExplore = true}),
@@ -207,7 +207,7 @@ struct MainView: View {
         var body: some View {
             VStack(alignment: .leading) {
                 Spacer()
-                // Profile or Logo section - Center the "Hi Pratik!" text
+                // MARK:  Profile or Logo section - Center the "Hi Pratik!" text
                 HStack {
                     Spacer()
                     Text("Hi \(SessionManager.shared.currentUser?.fullName ?? "Buddy")!") // Replace with user's name
@@ -235,7 +235,7 @@ struct MainView: View {
             .offset(x: isMenuOpen ? 0 : -290) // Off-screen when closed
             .animation(.easeInOut(duration: 0.3), value: isMenuOpen)
             
-            // Handle Navigation based on selected item
+            // MARK:  Handle Navigation based on selected item
             NavigationLink(destination: ProfileView(), isActive: $isExplore) { EmptyView() }
             NavigationLink(destination: LoginView(), isActive: $isLogOut) { EmptyView() }
             NavigationLink(destination: ShowMapView(), isActive: $isShowMap) { EmptyView() }
