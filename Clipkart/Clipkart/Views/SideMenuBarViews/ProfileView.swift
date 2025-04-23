@@ -5,8 +5,8 @@ struct ProfileView: View {
     @ObservedObject var viewModel = ProfileViewModel()
 
     var body: some View {
+     NavigationStack {
         TabView {
-            NavigationStack {
                 List {
                     Section {
                             HStack(spacing: 16) {
@@ -42,19 +42,19 @@ struct ProfileView: View {
                             }
                     }
                 }
+                .listStyle(.plain)
                 .navigationTitle(ViewStrings.profileLbl.getText())
                 .navigationBarBackButtonHidden(true)
-            }
+
             .tabItem {
                 Image(systemName: "person.fill")
                 Text(ViewStrings.profileLbl.getText())
             }
             
-            NavigationStack {
                 SettingsView()
                     .navigationTitle(ViewStrings.settingLbl.getText())
                     .navigationBarBackButtonHidden(true)
-            }
+         
             .tabItem {
                 Image(systemName: "gearshape.fill")
                 Text(ViewStrings.settingLbl.getText())
@@ -65,6 +65,7 @@ struct ProfileView: View {
                 EmptyView()
             }
         )
+      }
     }
 }
 
